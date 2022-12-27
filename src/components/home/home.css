@@ -1,9 +1,10 @@
-.container {
+.home_wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 22px 0 18px 0;
+  position: relative;
 }
 
 .header {
@@ -132,3 +133,23 @@
 }
 
 /* Styles for google comments finished */
+
+.stories_section {
+  width: 100%;
+  overflow-x: scroll;
+  margin-top: 2vh;
+}
+
+.story_title {
+  width: 53px;
+  height: 17px;
+  margin: 28px 22.5px 11px 9.5px;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.33px;
+  color: #fff;
+}

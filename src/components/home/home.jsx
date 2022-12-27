@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 import { ReactComponent as Phone } from "../../assets/icons/phone.svg";
 import { ReactComponent as Stars } from "../../assets/icons/stars.svg";
@@ -7,12 +7,13 @@ import { ReactComponent as Google } from "../../assets/icons/google.svg";
 import { ReactComponent as RightIcon } from "../../assets/icons/right.svg";
 import { Slide } from "react-reveal";
 import "./home.css";
-import Stories from "react-insta-stories";
-import stories from "../../utils/stories";
+import StoriesFeed from "../storiesFeed/storiesFeed";
+import StoriesUI from "../storiesUI/storiesUI";
 
 const Home = () => {
+  const [showStoriesModal, setShowStoriesModal] = useState(false);
   return (
-    <div className="container">
+    <div className="home_wrap">
       <div className="header">
         <Logo />
         <Phone />
@@ -53,14 +54,14 @@ const Home = () => {
         </div>
       </Slide>
       <div className="stories_section">
-        <Stories
-          stories={stories}
-          loop={true}
-          defaultInterval={7000}
-          width={360}
+        <div className="story_title">Stories</div>
+        <StoriesFeed
+          setShowStoriesModal={setShowStoriesModal}
+          showStoriesModal={showStoriesModal}
         />
       </div>
       <div className="purchase_btn-wrap"></div>
+      {showStoriesModal ? <StoriesUI /> : null}
     </div>
   );
 };

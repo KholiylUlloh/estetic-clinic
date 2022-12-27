@@ -1,24 +1,5 @@
-const stories = [
-  {
-    url: "./assets/images/sample.jpg",
-    type: "photo",
-    duration: 2000,
-  },
-  {
-    url: "./assets/images/sampl1.png",
-    type: "photo",
-    duration: 2000,
-  },
-  {
-    url: "./assets/images/sample.jpg",
-    type: "photo",
-    duration: 2000,
-  },
-  {
-    url: "./assets/images/sample1.png",
-    type: "photo",
-    duration: 2000,
-  },
+const storiesData = [
+  "	data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…ATWDrIQgrWU5kIFC5lOWWQhALkC2QhALkC5EIFVqIQhB//9k=",
 ];
 
-export default stories;
+export default storiesData;
