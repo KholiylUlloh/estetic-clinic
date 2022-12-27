@@ -1,0 +1,134 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 22px 0 18px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+
+/* Header styles finished */
+
+/* Promotion styles here */
+.promotion_wrap {
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 2vh;
+}
+
+.promotion {
+  width: 100%;
+  height: 112px;
+  padding: 13px 33px 16px;
+  border-radius: 8px;
+  background-image: linear-gradient(74deg, #9940f1 17%, #5740ee 86%);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.83;
+  letter-spacing: 2.27px;
+  text-align: center;
+  color: #ededff;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 2.23px;
+  margin-top: 12px;
+}
+
+.rating {
+  margin-top: 13px;
+}
+/* Promotion styles finished */
+
+/* Styles for About service here */
+
+.about_wrap {
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 2vh;
+}
+
+.about_service {
+  width: 100%;
+  height: 68px;
+  padding: 19px 16px 18px 23px;
+  border-radius: 6px;
+  border: solid 1px #2b3038;
+  background-color: #21242a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15.9px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.left {
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(-10px);
+  }
+}
+
+/* Styles for .about_service finished */
+
+/* Styles for google comments here */
+
+.google_wrap {
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 2vh;
+}
+
+.google_comments {
+  width: 100%;
+  height: 68px;
+  padding: 19px 16px 18px 23px;
+  border-radius: 6px;
+  border: solid 1px #2b3038;
+  background-color: #21242a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for google comments finished */

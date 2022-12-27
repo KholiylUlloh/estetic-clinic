@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* @font-face {
+  font-family: Helvetica;
+  src: url(./assets/fonts/Helvetica-Font/Helvetica.ttf);
+} */
+
+.main {
+  width: 100%;
+  background-color: #191a1c;
+  height: 658px;
+  min-height: 100vh;
+}
