@@ -1,5 +1,10 @@
-const storiesData = [
-  "	data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…ATWDrIQgrWU5kIFC5lOWWQhALkC2QhALkC5EIFVqIQhB//9k=",
-];
+const storiesData = {
+  John: [
+    {
+      type: "image",
+      url: "https://res.cloudinary.com/dvlhps1ij/image/upload/v1672204904/horse-gfde2e24f4_640_faxkra.jpg",
+    },
+  ],
+};
 
 export default storiesData;

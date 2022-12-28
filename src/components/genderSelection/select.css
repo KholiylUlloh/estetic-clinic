@@ -1,0 +1,100 @@
+.selection_wrap {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(34deg, #9940f1 21%, #5740ee 78%);
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+}
+
+.back_img {
+  width: 276px;
+  height: 297px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: 123px;
+}
+
+.gender_selection {
+  width: 100%;
+  height: 300px;
+  margin: 290.9px 0 0;
+  padding: 24px 39px 39px 35px;
+  border-radius: 28px;
+  background-color: #26272b;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.genders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 86px;
+  margin-top: 24px;
+}
+
+.selection_title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffefef;
+}
+
+.female,
+.male {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.female_img {
+  padding: 4px;
+  width: 78px;
+  height: 78px;
+  background-color: rgba(236, 68, 133, 0.34);
+  border-radius: 50%;
+}
+
+.male_img {
+  width: 88px;
+  height: 88px;
+  /* background-color: rgba(236, 68, 133, 0.34);
+  border-radius: 50%; */
+}
+
+.male_wrap,
+.female_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-align: center;
+  color: #fff;
+}
+
+.female_wrap {
+  gap: 5px;
+}
+
+.male_wrap {
+  margin-bottom: 6px;
+}

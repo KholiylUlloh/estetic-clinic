@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ReactComponent as Logo } from "../../assets/icons/logo.svg";
 import { ReactComponent as Phone } from "../../assets/icons/phone.svg";
 import { ReactComponent as Stars } from "../../assets/icons/stars.svg";
@@ -9,9 +9,9 @@ import { Slide } from "react-reveal";
 import "./home.css";
 import StoriesFeed from "../storiesFeed/storiesFeed";
 import StoriesUI from "../storiesUI/storiesUI";
+import { Link } from "react-router-dom";
 
 const Home = () => {
-  const [showStoriesModal, setShowStoriesModal] = useState(false);
   return (
     <div className="home_wrap">
       <div className="header">
@@ -55,13 +55,11 @@ const Home = () => {
       </Slide>
       <div className="stories_section">
         <div className="story_title">Stories</div>
-        <StoriesFeed
-          setShowStoriesModal={setShowStoriesModal}
-          showStoriesModal={showStoriesModal}
-        />
+        <StoriesFeed />
       </div>
-      <div className="purchase_btn-wrap"></div>
-      {showStoriesModal ? <StoriesUI /> : null}
+      <Link to={"/selectgender"} className="purchase_btn-wrap">
+        <button>Lazer epilasyon paketini oluştur</button>
+      </Link>
     </div>
   );
 };

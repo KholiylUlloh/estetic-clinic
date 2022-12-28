@@ -1,6 +1,12 @@
-.container {
+.outer_wrap {
   /* width: 100vw;
   height: 100vh; */
   position: fixed;
-  top: 10px;
+  /* top: 10px; */
+}
+
+.story_body {
+  width: 100vw;
+  border: 1px solid white;
+  height: 100vh;
 }
