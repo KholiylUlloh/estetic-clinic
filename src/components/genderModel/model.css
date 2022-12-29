@@ -3,16 +3,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
+  height: 100%;
+  padding: 0 10px 18px 10px;
 }
 
 .model_wrap img {
   width: 263px;
   height: 496px;
-  /* margin: 35px 29px 39px 28px;
-  padding: 444px 0 12px 16px; */
-  margin-top: 55px;
 }
 
 .nav_back {
@@ -23,13 +22,65 @@
 
 .action_icon {
   position: absolute;
-  bottom: 35px;
-  left: 20px;
-  border: 1px solid white;
+  bottom: 115px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13.9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ecedef;
+  gap: 5px;
+}
+
+.action_icon p {
+  width: 56px;
+  text-align: center;
 }
 
 .rotate_icon {
   position: absolute;
-  bottom: 35px;
-  right: 20px;
+  bottom: 135px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13.9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ecedef;
+  gap: 5px;
+}
+
+.select_btn {
+  width: 100%;
+  padding: 11px 71px 17px 69px;
+  border-radius: 25px;
+  background-color: #5540ee;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  border: none;
+}
+
+.path {
+  @apply xl:hover:fill-[#13d393ad] lg:hover:fill-[#13d393ad] z-20;
+  pointer-events: all;
+  cursor: pointer;
 }
