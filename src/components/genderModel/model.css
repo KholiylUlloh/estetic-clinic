@@ -1,73 +1,81 @@
-.model_wrap {
+.path {
+  @apply xl:hover:fill-[#13d393ad] lg:hover:fill-[#13d393ad] z-20;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.fill-selected {
+  fill: #13d393ad;
+}
+
+/*////////////////////////////////////////////////////////*/
+
+.model-wrap {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.model-area {
+  width: 100%;
+  margin-top: 55px;
   position: relative;
-  height: 100%;
-  padding: 0 10px 18px 10px;
+  height: 80vh;
+}
+.fem_model-area {
+  width: 100%;
+  position: relative;
 }
 
-.model_wrap img {
-  width: 263px;
-  height: 496px;
+.female_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav_back {
+.male_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select_all {
   position: absolute;
-  top: 27px;
-  left: 14px;
-}
-
-.action_icon {
-  position: absolute;
-  bottom: 115px;
-  left: 50px;
+  left: 44px;
+  bottom: 10px;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 13.9px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ecedef;
-  gap: 5px;
 }
 
-.action_icon p {
-  width: 56px;
+p {
   text-align: center;
+  width: 50px;
+  margin-top: 7px;
 }
 
-.rotate_icon {
+.turn {
   position: absolute;
-  bottom: 135px;
-  right: 50px;
+  right: 44px;
+  bottom: 25px;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 13.9px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ecedef;
-  gap: 5px;
 }
 
-.select_btn {
+.submit_btn button {
   width: 100%;
   padding: 11px 71px 17px 69px;
   border-radius: 25px;
   background-color: #5540ee;
+  border: none;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -76,11 +84,9 @@
   letter-spacing: normal;
   text-align: center;
   color: #fff;
-  border: none;
 }
 
-.path {
-  @apply xl:hover:fill-[#13d393ad] lg:hover:fill-[#13d393ad] z-20;
-  pointer-events: all;
-  cursor: pointer;
+.submit_btn {
+  padding: 0 10px 18px 10px;
+  margin-top: 40px;
 }
