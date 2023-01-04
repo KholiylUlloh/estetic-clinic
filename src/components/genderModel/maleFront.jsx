@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 import "./model.css";
 
-const MaleFront = ({ handleAddOrDelete, selectedAreas }) => {
+const MaleFront = ({ handleAddOrDelete, selectedAreas, selectAll }) => {
   return (
     <div
       style={{
         backgroundImage: `url(${require("../../assets/images/model_erkek.png")}`,
         backgroundPosition: "center",
-        backgroundSize: "270px 482.2px",
+        backgroundSize: "270px 485.2px",
         backgroundRepeat: "no-repeat",
         width: "100%",
         height: "100%",
@@ -21,6 +21,7 @@ const MaleFront = ({ handleAddOrDelete, selectedAreas }) => {
         viewBox="0 0 700 1320"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        // className={selectAll ? "fill-all" : null}
       >
         <path
           d="M394.844 143C385.636 157.333 370.803 166 349.136 166C327.469 166 307.969 146.667 304.969 142.667C302.803 136.334 302.303 129.001 301.636 123.834L301.635 123.833L301.493 124.105C298.194 130.229 294.451 126.649 293.136 125.5C292.434 124.886 290.763 121.549 289.191 117.989L288.878 117.275C287.583 114.294 286.408 111.275 285.969 109.667C284.969 106 282.802 93 286.802 89C290.736 85.066 293.865 88.871 294.918 90.741L294.969 90.833L294.999 90.438C295.258 86.492 294.624 79.178 294.302 74.667C293.969 70 294.887 54.795 296.802 46.5C299.802 33.5 319.136 2 349.969 2C368.969 2 403.637 21 405.303 53C405.961 65.6464 406.204 73.1909 406.214 78.144V78.975C406.203 82.292 406.081 84.371 405.913 86.114L405.886 86.394C405.858 86.671 405.829 86.941 405.799 87.207L405.759 87.556L405.719 87.902L405.678 88.248C405.554 89.286 405.423 90.347 405.303 91.667L405.261 91.863L405.303 91.667C408.303 87.333 415.469 83.25 416.344 99C417.219 114.75 410.719 117.625 409.594 122.625C408.469 127.625 403.344 130.75 399.594 124.375C399.844 127.75 397.469 137.375 394.844 143Z"

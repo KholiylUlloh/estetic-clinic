@@ -8,7 +8,6 @@ import { ReactComponent as RightIcon } from "../../assets/icons/right.svg";
 import { Slide } from "react-reveal";
 import "./home.css";
 import StoriesFeed from "../storiesFeed/storiesFeed";
-import StoriesUI from "../storiesUI/storiesUI";
 import { Link } from "react-router-dom";
 
 const Home = () => {

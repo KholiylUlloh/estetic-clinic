@@ -4,23 +4,10 @@ import MaleBack from "./maleback";
 import { FiCircle } from "react-icons/fi";
 import { ReactComponent as Turn } from "../../assets/icons/rotate.svg";
 import "./model.css";
+import { Link } from "react-router-dom";
 
-const MaleModel = () => {
+const MaleModel = ({ selectedAreas, handleAddOrDelete, handleSelectAll }) => {
   const [changeModel, setChangeModel] = useState(true);
-  const [selectedAreas, setSelectedAreas] = useState([]);
-  const handleAddOrDelete = (item) => {
-    console.log(item);
-    if (selectedAreas.includes(item)) {
-      selectedAreas.splice(
-        selectedAreas.findIndex((f) => f === item),
-        1
-      );
-      setSelectedAreas([...selectedAreas]);
-    } else {
-      selectedAreas.push(item);
-      setSelectedAreas([...selectedAreas]);
-    }
-  };
   return (
     <div className="model-wrap">
       <div className="model-area">
@@ -36,7 +23,7 @@ const MaleModel = () => {
           />
         )}
         <div className="select_all">
-          <FiCircle size={24} color="white" />
+          <FiCircle onClick={handleSelectAll} size={24} color="white" />
           <p>Tüm Vücut</p>
         </div>
         <div className="turn">
@@ -45,7 +32,9 @@ const MaleModel = () => {
         </div>
       </div>
       <div className="submit_btn">
-        <button>({selectedAreas.length}) Bölge seçim yap</button>
+        <Link to="/addmore" state={{ prev: "male" }}>
+          <button>({selectedAreas.length}) Bölge seçim yap</button>
+        </Link>
       </div>
     </div>
   );
